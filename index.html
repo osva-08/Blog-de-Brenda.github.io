@@ -5,47 +5,106 @@
     <title>Blog de Brenda</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url("blog_de_brenda.jpeg");
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            padding: 20px;
-        }
+       /* Importar una fuente más bonita */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background-color: rgba(0,0,0,0.6);
-            padding: 20px;
-            border-radius: 10px;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("blog_de_brenda.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantiene el fondo quieto al hacer scroll */
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
-        h2 {
-            border-left: 4px solid #aaa;
-            padding-left: 10px;
-            margin-top: 30px;
-        }
+.container {
+    max-width: 650px;
+    width: 90%;
+    margin: 40px auto;
+    /* Efecto de cristal (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
 
-        ul {
-            list-style: disc;
-        }
+h1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
 
-        .contenido {
-            display: none;
-            margin-left: 20px;
-            margin-top: 5px;
-        }
+h2 {
+    border-left: 5px solid #4da6ff;
+    padding-left: 15px;
+    margin-top: 40px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-        a {
-            color: #4da6ff;
-            cursor: pointer;
-        }
+p {
+    line-height: 1.6;
+    color: #e0e0e0;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+ul {
+    list-style: none; /* Quitamos los puntos clásicos */
+    padding: 0;
+}
+
+/* Estilo para los enlaces de Recomendaciones */
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+ul li a:hover {
+    color: #4da6ff;
+    padding-left: 10px; /* Desplazamiento suave */
+    border-bottom: 1px solid #4da6ff;
+}
+
+/* Estilo especial para redes sociales (Encuéntrame aquí) */
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links li a {
+    background: rgba(77, 166, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #4da6ff;
+    font-weight: 500;
+}
+
+.social-links li a:hover {
+    background: #4da6ff;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(77, 166, 255, 0.4);
+}
     </style>
 </head>
 
@@ -78,12 +137,11 @@
 
     <!-- LINKS -->
     <h2>Encuéntrame aquí</h2>
-    <ul>
-        <li><a href="https://open.spotify.com/user/6akyj99iuguoho9qvrdavzi7a?si=nBDPCmPfRhyQP5pr9CJW4w
-" target="_blank">Spotify</a></li>
-        <li><a href="https://www.instagram.com/brendeuxtetes?igsh=MXNmZGw2eGRoZWU3cg==" target="_blank">Instagram</a></li>
-        <li><a href="https://x.com/bluehorse7?s=21" target="_blank">Twitter</a></li>
-    </ul>
+<ul class="social-links">
+    <li><a href="https://open.spotify.com/user/6akyj99iuguoho9qvrdavzi7a?si=nBDPCmPfRhyQP5pr9CJW4w" target="_blank">Spotify</a></li>
+    <li><a href="https://www.instagram.com/brendeuxtetes?igsh=MXNmZGw2eGRoZWU3cg==" target="_blank">Instagram</a></li>
+    <li><a href="https://x.com/bluehorse7?s=21" target="_blank">Twitter</a></li>
+</ul>
 
 </div>
 

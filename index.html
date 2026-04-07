@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Brenda</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("blog_de_brenda.jpeg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            border-left: 4px solid #aaa;
+            padding-left: 10px;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style: disc;
+        }
+
+        .contenido {
+            display: none;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        a {
+            color: #4da6ff;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Blog de Brenda</h1>
+
+    <!-- SOBRE -->
+    <h2>Sobre el blog</h2>
+    <p>
+        ¡Hola! <br>
+        <br>
+       Mi nombre es Brenda. Este es un blog personal que creé para compartir un poco de lo que más me gusta: literatura,
+       música y cine. Aquí podrás encontrar recomendaciones y/o mis pensamientos sobre ello y otras cosas más. <br> 
+        <br>
+       ¡Siéntete libre de compartirme tus pensamientos también!
+    </p>
+
+    <!-- RECOMENDACIONES -->
+    <h2>Recomendaciones</h2>
+    <ul>
+        <li><a href="musica.html">Música</a></li>
+        <li><a href="literatura.html">Literatura</a></li>
+        <li><a href="cine.html">Cine</a></li>
+        <li><a href="poemas.html">Poemas</a></li>
+        <li><a href="mental.html">Contenido mental</a></li>
+    </ul>
+
+    <!-- LINKS -->
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://open.spotify.com/user/6akyj99iuguoho9qvrdavzi7a?si=nBDPCmPfRhyQP5pr9CJW4w
+" target="_blank">Spotify</a></li>
+        <li><a href="https://www.instagram.com/brendeuxtetes?igsh=MXNmZGw2eGRoZWU3cg==" target="_blank">Instagram</a></li>
+        <li><a href="https://x.com/bluehorse7?s=21" target="_blank">Twitter</a></li>
+    </ul>
+
+</div>
+
+<script>
+function toggle(id) {
+    var elemento = document.getElementById(id);
+
+    if (elemento.style.display === "none" || elemento.style.display === "") {
+        elemento.style.display = "block";
+    } else {
+        elemento.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

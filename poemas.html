@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cine - Blog de Brenda</title>
+    <title>Poemas - Blog de Brenda</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
@@ -13,7 +13,6 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: #333; /* Texto oscuro para contrastar con el fondo claro */
             margin: 0;
             display: flex;
             align-items: center;
@@ -25,54 +24,79 @@
         .container {
             max-width: 600px;
             width: 100%;
-            /* Efecto de cristal blanco */
-            background: rgba(255, 255, 255, 0.25); 
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            /* Cristal blanco más pulido */
+            background: rgba(255, 255, 255, 0.15); 
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
             text-align: center;
+        }
+
+        .icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            display: block;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
         }
 
         h1 {
             font-weight: 600;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-top: 0;
-            color: #000000;
-            text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+            color: #000000; /* Blanco para que resalte con el estilo moderno */
+            text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            letter-spacing: -1px;
         }
 
-        p {
-            font-size: 1.1rem;
+        /* Estilo bonito para la lista de poemas */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 40px 0;
+        }
+
+        li {
+            margin: 15px 0;
+            transition: transform 0.3s ease;
+        }
+
+        li a {
+            text-decoration: none;
             color: #000000;
-            font-weight: 300;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 15px;
+            display: block;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            font-weight: 400;
+        }
+
+        li a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: rgba(255, 255, 255, 0.6);
         }
 
         .back-link {
             text-decoration: none;
-            color: #000000;
+            color: rgba(0, 0, 0, 0.8);
             font-weight: 400;
+            font-size: 0.9rem;
             display: inline-block;
-            margin-top: 30px;
-            padding: 8px 15px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
             transition: 0.3s;
         }
 
         .back-link:hover {
-            background: rgba(255, 255, 255, 0.4);
-            transform: scale(1.05);
-        }
-
-        /* Icono decorativo */
-        .icon {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            display: block;
+            color: #000000;
+            background: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
@@ -82,7 +106,8 @@
 <div class="container">
     <span class="icon">📜</span>
     <h1>Poemas</h1>
-     <ul>
+    
+    <ul>
         <li><a href="poema_1.html">Vivo sin vivir en mí, de Santa Teresa de Ávila</a></li>
     </ul>
     

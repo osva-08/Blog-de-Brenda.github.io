@@ -31,6 +31,9 @@
             border-radius: 20px;
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
             color: #000000;
+            /* Flex para centrar el botón al final */
+            display: flex;
+            flex-direction: column;
         }
 
         h1 {
@@ -49,7 +52,6 @@
             opacity: 0.8;
         }
 
-        /* Estilo normal para todo el contenido */
         .contenido {
             font-size: 1.1rem;
             line-height: 1.7;
@@ -60,28 +62,40 @@
         .poema-centrado {
             text-align: center;
             margin: 40px 0;
+            font-weight: 400;
         }
 
         .divisor {
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
             margin: 30px 0;
+        }
+
+        /* Botón de regreso centrado y estilizado */
+        .back-link-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
         }
 
         .back-link {
             text-decoration: none;
-            color: #000000;
+            color: #ffffff;
             font-weight: 400;
-            display: inline-block;
-            margin-top: 30px;
-            padding: 8px 20px;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            transition: 0.3s;
+            padding: 12px 30px;
+            background: rgba(0, 0, 0, 0.7); /* Oscuro para contraste */
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .back-link:hover {
-            background: rgba(255, 255, 255, 0.4);
-            transform: translateX(-5px);
+            background: rgba(0, 0, 0, 0.9);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
 
         strong {
@@ -191,7 +205,9 @@
         </p>
     </div>
 
-    <a href="poemas.html" class="back-link">⬅ Volver al inicio</a>
+    <div class="back-link-container">
+        <a href="poemas.html" class="back-link">⬅ Volver al inicio</a>
+    </div>
 </div>
 
 </body>
